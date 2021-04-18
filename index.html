@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Amazonas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="img/Teatro.jpg" class="teatro">
+        <header>
+            <a href="#" class="logo">Teatro Amazonas</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1;" class="active">Home</a></li>
+                <li><a href="#" style="--i:2;">Institucional</a></li>
+                <li><a href="#" style="--i:3;">Programação</a></li>
+                <li><a href="#" style="--i:4;">Visitação</a></li>
+                <li><a href="#" style="--i:5;">Informações</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Bem-Vindos Ao<br><span>Teatro Amazonas</span></h2>
+                <p>O Teatro Amazonas, desde a sua inauguração, viu apresentar-se no seu palco todo tipo de espetáculo: óperas, operetas, musicais, peças de teatro, shows de cantores líricos e populares, festivais, grupos de dança, bandas de música, corais, orquestras e tantos outros.</p>
+                <a href="#">Leia Mais</a>
+            </div>
+        </div>
+
+        <ul class="redes">
+            <li><a href="#" style="--i:12"><img src="img/facebook.png"></a></li>
+            <li><a href="#" style="--i:13"><img src="img/twitter.png"></a></li>
+            <li><a href="#" style="--i:14"><img src="img/instagram.png"></a></li>
+        </ul>
+
+    </section>
+    <footer>
+        <p>Todos Os Direitos Reservados &copy; - 2021</p>
+        <p>Desenvolvido Por Lucian Cardoso</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
